@@ -1,2 +1,2 @@
 # CWD
-A repository for my Critical Web Design class.
+This is Ace Molloy's Github account for their Critical Web Design class.

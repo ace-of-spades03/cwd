@@ -11,8 +11,39 @@
 		Then, I used the mouseover effect to change the text for the ad to comment on how Apple price-gouges. However, I didn't want to stop there, so I made it so that when you click on the phone, it takes you to a different page I made. That page comments more specifically on the problems that Apple users ignore for brand loyalty. That page also used the mouseover effect to show those problems.
 	-->
 	<title>Worse for More</title>
-<!-- I use an external stylesheet for this because I use multiple pages. I referenced this page: https://www.w3schools.com/html/html_css.asp -->
-	<link rel="stylesheet" href="./style.css">
+	<style>
+		/*Style here is used to mimic the original ad*/
+
+	body {
+		/*I referenced this website to get the gradient: https://www.w3schools.com/css/css3_gradients.asp
+		and this website to get the background to work: https://www.w3schools.com/cssref/css3_pr_background-size.php*/
+		background-image: linear-gradient(to bottom, #4C8797, #8FCEDF);
+		background-repeat: no-repeat;
+		/*Wanted it to fill the browser height-wise*/
+		background-size: auto 1500px;
+		font-family: Helvetica, Arial, sans-serif;
+		text-align: center;
+		color: white;
+	}
+	h1 {
+		margin-top: 100px;
+		font-size: 60px;
+	}
+	h2{
+		font-size: 30px;
+		font-weight: lighter;
+	}
+	#phone {
+		/*Makes the phone image exist*/
+		width: 613px;
+		height: 80px;
+		margin-top: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		/*I used CSP to crop this image*/
+		background-image: url(../assets/img/phone.png);
+	}
+	</style>
 	
 </head>
 <body>

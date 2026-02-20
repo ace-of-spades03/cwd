@@ -4,12 +4,35 @@
 
 	<!--
 	About this page:
+		For this page, I wanted to critique extreme brand loyalty more generally, but I wanted to do this by using Apple more specifically. People have a cult-like following for many brands which I find to be problematic at best, and I wanted this page to show how they justify poor products as brand loyalty. 
 
+		For the first part of the page, it is a real ad that Apple made. I found the image at this website: https://appleinsider.com/articles/17/05/22/new-apple-ads-redone-switch-site-sell-android-users-on-iphone-perks
+		
+		Then, I used the mouseover effect to change the text for the ad to comment on how Apple price-gouges. However, I didn't want to stop there, so I made it so that when you click on the phone, it takes you to a different page I made. That page comments more specifically on the problems that Apple users ignore for brand loyalty. That page also used the mouseover effect to show those problems.
 	-->
-	<title>Unbranding</title>
+	<title>Worse for More</title>
+<!-- I use an external stylesheet for this because I use multiple pages. I referenced this page: https://www.w3schools.com/html/html_css.asp -->
+	<link rel="stylesheet" href="./style.css">
 	
 </head>
 <body>
-	<h1>Hello, world!</h1>
+	<h1 id="text">Life is Easier on uPhone.</h1>
+	<h2>And that starts as soon as you turn it on.</h2>
+	<a href="./apple.html">
+		<div id="phone"></div>
+	</a>
+	<script>
+		// Referenced: https://www.w3schools.com/js/js_events_mouse.asp
+		const text = 
+		document.getElementById("text");
+
+		text.addEventListener("mouseover", function(){
+			text.innerHTML="Life is More Expensive on uPhone.";
+		});
+
+		text.addEventListener("mouseout", function(){
+			text.innerHTML="Life is Easier on iPhone.";
+		});
+	</script>
 </body>
 </html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+
+	<!--
+	About this page:
+		See index.html for more info
+
+		I wanted it to look very minimalistic because that is how the style is nowadays.
+
+		Credit to:
+
+		Watermelon by Anton Gajdosik from <a href="https://thenounproject.com/browse/icons/term/watermelon/" target="_blank" title="Watermelon Icons">Noun Project</a> (CC BY 3.0)
+
+		iPhone by Jamison Wieser from <a href="https://thenounproject.com/browse/icons/term/iphone/" target="_blank" title="iPhone Icons">Noun Project</a> (CC BY 3.0)
+		
+		Broken iPhone X by Max Kalik from <a href="https://thenounproject.com/browse/icons/term/broken-iphone-x/" target="_blank" title="Broken iPhone X Icons">Noun Project</a> (CC BY 3.0)
+		
+		macbook by Roberto Chiaveri from <a href="https://thenounproject.com/browse/icons/term/macbook/" target="_blank" title="macbook Icons">Noun Project</a> (CC BY 3.0)
+
+		airpods by Jordy Madueño from <a href="https://thenounproject.com/browse/icons/term/airpods/" target="_blank" title="airpods Icons">Noun Project</a> (CC BY 3.0)
+
+		apple watch by iconfield from <a href="https://thenounproject.com/browse/icons/term/apple-watch/" target="_blank" title="apple watch Icons">Noun Project</a> (CC BY 3.0)
+
+		MacBook Charger by Cezary Lopacinski from <a href="https://thenounproject.com/browse/icons/term/macbook-charger/" target="_blank" title="MacBook Charger Icons">Noun Project</a> (CC BY 3.0)
+
+		airpods by Gregor Cresnar from <a href="https://thenounproject.com/browse/icons/term/airpods/" target="_blank" title="airpods Icons">Noun Project</a> (CC BY 3.0)
+
+		battery low by SHAHAREA from <a href="https://thenounproject.com/browse/icons/term/battery-low/" target="_blank" title="battery low Icons">Noun Project</a> (CC BY 3.0)
+
+	-->
+	<title>Worse for More</title>
+
+	<link rel="stylesheet" href="./style.css">
+
+	<style>
+		/*Style changes for this page*/
+	h1 {
+		margin-top: 20%;
+	}
+	#watermelon {
+		margin-left: auto;
+		margin-right: auto;
+		width: 10%;
+	}
+	#iphone {
+		height: 40%;
+		position:absolute;
+		top: 50px;
+		left: 200px;
+	}
+	#mac {
+		height: 30%;
+		position:absolute;
+		top: 100px;
+		right: 150px;
+	}
+	#airpod {
+		height: 30%;
+		position:absolute;
+		bottom: 50px;
+		left: 150px;
+	}
+	#watch {
+		height: 30%;
+		position:absolute;
+		bottom: 50px;
+		right: 250px;
+	}
+	</style>
+	
+</head>
+<body>
+	<h1>Watermelon</h1>
+	<h2 id="slogan">Love the Brand.</h2>
+	<!-- It wouldn't let me resize the image when it was a div, so I made it an img -->
+	<img id="watermelon" src="../assets/img/watermelon.png" alt="A graphic of a watermelon with a bite taken out of it.">
+	<img id="iphone" src="../assets/img/iphone.png" alt="A graphic of an iPhone."></img>
+	<img id="mac" src="../assets/img/mac.png" alt="A graphic of a Macbook."></img>
+	<img id="airpod" src="../assets/img/airpod.png" alt="A graphic of a set of Airpods."></img>
+	<img id="watch" src="../assets/img/watch.png" alt="A graphic of an Apple Watch."></img>
+	<script>
+		// I wanted this change to reference how Apple intentionally makes their devices fragile in order to force people to buy more devices.
+		// Referenced: https://www.w3schools.com/js/js_events_mouse.asp
+		const slogan = 
+		document.getElementById("slogan");
+
+		slogan.addEventListener("mouseover", function(){
+			slogan.innerHTML="Worse for More.";
+		});
+	</script>
+	<script>
+		// I wanted this change to reference how Apple intentionally makes their devices fragile in order to force people to buy more devices.
+		// Referenced: https://www.w3schools.com/js/js_events_mouse.asp
+		const iphone = 
+		document.getElementById("iphone");
+
+		iphone.addEventListener("mouseover", function(){
+			iphone.src="../assets/img/bphone.png";
+		});
+
+		iphone.addEventListener("mouseout", function(){
+			iphone.src="../assets/img/iphone.png";
+		});
+	</script>
+	<script>
+		// I wanted this change to reference how Apple forces its consumers to use Apple chargers even though USB-C is an almost universal standard because then consumers cannot buy elsewhere
+		// Referenced: https://www.w3schools.com/js/js_events_mouse.asp
+		const mac = 
+		document.getElementById("mac");
+
+		mac.addEventListener("mouseover", function(){
+			mac.src="../assets/img/charger.png";
+		});
+
+		mac.addEventListener("mouseout", function(){
+			mac.src="../assets/img/mac.png";
+		});
+	</script>
+	<script>
+		// I wanted this change to reference how airpods specifically are very easy to lose with no failsafe for this. This is a problem with all earbud of this type, but Apple made them first.
+		// Referenced: https://www.w3schools.com/js/js_events_mouse.asp
+		const airpod = 
+		document.getElementById("airpod");
+
+		airpod.addEventListener("mouseover", function(){
+			airpod.src="../assets/img/pod.png";
+		});
+
+		airpod.addEventListener("mouseout", function(){
+			airpod.src="../assets/img/airpod.png";
+		});
+	</script>
+	<script>
+		// I wanted another problem to even out the design, but those three were my main issues, so when I looked for problems with the Apple Watch, another key product, I found that they die very quickly.
+		// Referenced: https://www.w3schools.com/js/js_events_mouse.asp
+		const watch = 
+		document.getElementById("watch");
+
+		watch.addEventListener("mouseover", function(){
+			watch.src="../assets/img/battery.png";
+		});
+
+		watch.addEventListener("mouseout", function(){
+			watch.src="../assets/img/watch.png";
+		});
+	</script>
+</body>
+</html>

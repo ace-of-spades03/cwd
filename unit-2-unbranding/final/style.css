@@ -1,0 +1,32 @@
+/*Style here is used to mimic the original ad*/
+
+	body {
+		/*I referenced this website to get the gradient: https://www.w3schools.com/css/css3_gradients.asp
+		and this website to get the background to work: https://www.w3schools.com/cssref/css3_pr_background-size.php*/
+		background-image: linear-gradient(to bottom, #4C8797, #8FCEDF);
+		background-repeat: no-repeat;
+		/*Wanted it to fill the browser height-wise*/
+		background-size: auto 1500px;
+		font-family: Helvetica, Arial, sans-serif;
+		text-align: center;
+		color: white;
+	}
+	h1 {
+		margin-top: 100px;
+		font-size: 60px;
+	}
+	h2{
+		font-size: 30px;
+		font-weight: lighter;
+	}
+	#phone {
+		/*Makes the phone image exist*/
+		width: 613px;
+		height: 80px;
+		margin-top: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		/*I used CSP to crop this image*/
+		background-image: url(../assets/img/phone.png);
+	}
+	

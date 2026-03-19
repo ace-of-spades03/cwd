@@ -6,15 +6,162 @@
 
 	<!-- 
 	About this page:
+		For this wholesome news site, I wanted to talk about dog news because I know that I turn to dog memes when I feel upset, and I'm sure others do too. I made my newspaper look like the "New York Times" because it is the most newspaper news site that I know. This one is "They're Good Dogs, Brent," however, to reference WeRateDogs's famous meme. 
 
+		I did change the layout of the site slightly to better fit rows and columns because nytimes.com was not very well-aligned to the grid I wanted to use.
+
+		For the "articles," they are either fake stories that could be real, like the stories at the bottom and the "just now," or they are real stories either from my dogs or that I know about, like the stories in the row with the main image of the two dogs.
+
+		I used these images with a slightly different scale:
+			Photo by <a href="https://unsplash.com/@candesjaramillo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Candes J</a> on <a href="https://unsplash.com/photos/dog-wearing-a-white-sheet-as-a-ghost-costume-BzBA6bKCj98?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+      		Photo by <a href="https://unsplash.com/@cohenberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cohen Berg</a> on <a href="https://unsplash.com/photos/a-small-dog-wearing-a-sweater-sits-in-a-car-f0_7pIki9Mg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      		
+      		Photo by <a href="https://unsplash.com/@eugeniqa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Evgeniy Beloshytskiy</a> on <a href="https://unsplash.com/photos/children-learning-to-draw-outdoors-with-a-dog-nearby-Vd26ICXwhYk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+      		Photo by <a href="https://unsplash.com/@guogete?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">和国 谢</a> on <a href="https://unsplash.com/photos/a-couple-of-dogs-that-are-holding-a-frisbee-PopNBvQfMYE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+      		Photo by <a href="https://unsplash.com/@helenalopesph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Helena Lopes</a> on <a href="https://unsplash.com/photos/two-fluffy-puppies-sitting-in-a-basket-ILuDX--8Knw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+      		Arrow by Ghiyats Mujtaba from <a href="https://thenounproject.com/browse/icons/term/arrow/" target="_blank" title="Arrow Icons">Noun Project</a> (CC BY 3.0) 
+      		(This one is used to creat the apperance of a drop-down effect)
 
 	-->
-	<title>Fake News</title>
+	<title>A Bit of Dogs for the Day</title>
 	
+	<!-- Puts bootstrap into the code. I also made a stylesheet to organize everything without making this code be super long. -->
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  	<link rel="stylesheet" href="../assets/styles.css">
+
 </head>
 <body>
-	<h1>Hello, world!</h1>
+	<!-- I made the 8 rows to contain the variable amount of columns per row -->
+	<div class="container text-center">
+		<!-- This needs two columns for the date and the title. P makes it work with line breaks -->
+		<div class="row">
+			<div class="col-2 text-start">
+				<p>Monday, March 16, 2026</p>
+				<p>Today's Paper</p>
+			</div>
+			<div class="col-8">
+				<h1>They're Good Dogs, Brent</h1>
+			</div>
+			<div class="col-2"></div>
+		</div> 
+
+		<!-- These are all of the fake article types with different dogs. I chose the dogs I see the most memes of, then generic categories. I added two extra columns as buffer on either side. -->
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-1 col-md-0.5">
+				<button type="button">Labs</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Huskies</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Collies</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Pitties</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Great Danes</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Small Dogs</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Medium Dogs</button>
+			</div>
+			<div class="col-1">
+				<button type="button">Big Dogs</button>
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<!-- This is the breaking news segment. Since the red text was only here, I just changed the color locally. Used border to create lines -->
+		<div class="row" style="border-bottom-style: solid; border-top-style: double;">
+			<div class="col-4"></div>
+			<div class="col-2">
+				<p style="color: red;">JUST NOW</p>
+			</div>
+			<div class="col-2">
+				<p>"Local Stray Saves Boy from Burning Building"</p>
+			</div>
+			<div class="col-4"></div>
+		</div>
+
+		<!-- Because this row has rows inside of it, I made the columns first, then the 2 extra rows for the different text segments -->
+		<div class="row">
+			<div class="col-4">
+				<div class="row">
+					<h2>HIT WEBSITE RAISES HUNDREDS</h2>
+					<p>A silly joke on the internet turns wholesome as hundreds of dollars are raised to pay for the surgeries of dogs in need. “WeRateDogs.com” began as an internet joke account, but as it grew in popularity, the creator used his platform for good. The merch he makes donates 15% to the 15/10 foundation.</p>
+				</div>
+				<div class="row">
+					<h3>LOCAL PITBULL MUTT IS PROVEN TO BE LACKING IN BRAIN CELLS, BUT FULL OF LOVE</h3>
+					<p>Local dog has been recorded as becoming so happy to see his owners that he runs headfirst into a table.</p>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="../assets/4.jpg" alt="An image of two small dogs standing together. One of them is wearing a yellow plush circle around its neck, and the other is eating the circle." class="img-fluid">
+			</div>
+			<div class="col-4">
+				<div class="row">
+					<h3>LOCAL IDIOT DOG RUNS INTO CHICKEN WIRE, REQUIRES SURGERY</h3>
+					<p>The Pitt Lab Mutt, Reese, was running along her yard when she decided to run into the chicken wire marking off the garden. After receiving stitches, she is said to be “a problem” by owners due to her attempts to run around.</p>
+				</div>
+				<div class="row">
+					<h2>THE IMPROVEMENT OF A BREED: PUGS AND FRENCHIES</h2>
+					<p>Breeders have been attempting improve the breed standards for Pugs and French Bulldogs in order to improve the health of the dogs. There are pushes to make the two breeds appear more like older variations with longer snouts and fewer breathing issues. These improvements, while still not endorsed by competitions, are praised by the common people.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- This one has images paired with text, so I made 4 primary columns with 2 columns inside those to add the image and text into. I made them buttons to look like they can go to the stories, once again. -->
+		<div class="row">
+			<div class="col-3">
+				<button type="button">
+				<div class="col">
+					<img src="../assets/5.jpg" alt="An image of two puppies sitting in a wicker basket." class="img-fluid">
+				</div>
+				<div class="col">
+					<p>Puppies need baskets, new study shows.</p>
+				</div>
+				</button>
+			</div>
+			<div class="col-3">
+				<button type="button">
+				<div class="col">
+					<img src="../assets/1.jpg" alt="An image of a dog with a sheet ghost costume on." class="img-fluid">
+				</div>
+				<div class="col">
+					<p>The most popular costume for your pup this year: ghost dogs are back in style!</p>
+				</div>
+				</button>
+			</div>
+			<div class="col-3">
+				<button type="button">
+				<div class="col">
+					<img src="../assets/3.jpg" alt="An image of a group of students sitting at desks outside. A dog sits with them." class="img-fluid">
+				</div>
+				<div class="col">
+					<p>Students undertake experiment that shows dogs worsen focus.</p>
+				</div>
+				</button>
+			</div>
+			<div class="col-3">
+				<button type="button">
+				<div class="col">
+					<img src="../assets/2.jpg" alt="An image of a dog sitting in the drivers seat of a car." class="img-fluid">
+				</div>
+				<div class="col">
+					<p>Local dog learns to drive. Owner says, "I wanted to be a passenger princess."</p>
+				</div>
+				</button>
+			</div>
+		</div>
+</div>
 </body>
 </html>

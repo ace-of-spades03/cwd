@@ -39,62 +39,57 @@
 	<!-- I made the 8 rows to contain the variable amount of columns per row -->
 	<div class="container text-center">
 		<!-- This needs two columns for the date and the title. P makes it work with line breaks -->
-		<div class="row">
-			<div class="col-2 text-start">
+		<div class="row jutify-content-center">
+			<div class="col-sm-2 col-md-2 col-lg-2 text-start">
 				<p>Monday, March 16, 2026</p>
 				<p>Today's Paper</p>
 			</div>
-			<div class="col-8">
+			<div class="col-sm-5 col-md-8 col-lg-8">
 				<h1>They're Good Dogs, Brent</h1>
 			</div>
-			<div class="col-2"></div>
 		</div> 
 
-		<!-- These are all of the fake article types with different dogs. I chose the dogs I see the most memes of, then generic categories. I added two extra columns as buffer on either side. -->
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-1">
+		<!-- These are all of the fake article types with different dogs. I chose the dogs I see the most memes of, then generic categories. I added two extra columns as buffer on either side. I couldn't make the empty columns dissapear at a sm size, but it is response, and that's enough for me -->
+		<div class="row justify-content-center">
+			<div class="col-lg-1">
 				<p>Labs</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Huskies</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Collies</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Pitties</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Great Danes</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Small Dogs</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Medium Dogs</p>
 			</div>
-			<div class="col-1">
+			<div class="col-lg-1">
 				<p>Big Dogs</p>
 			</div>
-			<div class="col-2"></div>
 		</div>
 
 		<!-- This is the breaking news segment. Since the red text was only here, I just changed the color locally. Used border to create lines -->
-		<div class="row" style="border-bottom-style: solid; border-top-style: double;">
-			<div class="col-4"></div>
+		<div class="row justify-content-center" style="border-bottom-style: solid; border-top-style: double;">
 			<div class="col-2">
 				<p style="color: red;">JUST NOW</p>
 			</div>
 			<div class="col-2">
 				<p>"Local Stray Saves Boy from Burning Building"</p>
 			</div>
-			<div class="col-4"></div>
 		</div>
 
 		<!-- Because this row has rows inside of it, I made the columns first, then the 2 extra rows for the different text segments -->
 		<div class="row">
-			<div class="col-4">
+			<div class="col-lg-4">
 				<div class="row">
 					<h2>HIT WEBSITE RAISES HUNDREDS</h2>
 					<p>A silly joke on the internet turns wholesome as hundreds of dollars are raised to pay for the surgeries of dogs in need. “WeRateDogs.com” began as an internet joke account, but as it grew in popularity, the creator used his platform for good. The merch he makes donates 15% to the 15/10 foundation.</p>
@@ -104,10 +99,10 @@
 					<p>Local dog has been recorded as becoming so happy to see his owners that he runs headfirst into a table.</p>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4">
 				<img src="../assets/4.jpg" alt="An image of two small dogs standing together. One of them is wearing a yellow plush circle around its neck, and the other is eating the circle." class="img-fluid">
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4">
 				<div class="row">
 					<h3>LOCAL IDIOT DOG RUNS INTO CHICKEN WIRE, REQUIRES SURGERY</h3>
 					<p>The Pitt Lab Mutt, Reese, was running along her yard when she decided to run into the chicken wire marking off the garden. After receiving stitches, she is said to be “a problem” by owners due to her attempts to run around.</p>

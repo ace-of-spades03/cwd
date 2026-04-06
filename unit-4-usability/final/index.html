@@ -17,8 +17,6 @@
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   	<link rel="stylesheet" href="../assets/style.css">
-
-
 </head>
 <body>
 	<!-- All of these divs is just bootstrap making the page look right. -->
@@ -52,8 +50,101 @@
 						<p>Strongly Agree</p>
 					</div>
 				</div>
-				<!-- Being 100% honest, I am currently on the train home for Easter/my brother's birthday, and I forgot my chapter with the information on how to make the interactive form :( sorry.... I'll add it when I get back Sunday/Monday -->
-				<p>Placeholder</p>
+				<!-- This makes the form work. I referenced Kenzie's website as she offered in the discord to solve the lining up problem -->
+				<div class="row" style="border-width: 0rem;">
+					<form action="#" id="myForm">
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="2" name="q1" id="q1" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q1" class="form-label">I think that I would like to use this system frequently.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="2" name="q2" id="q2" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q2" class="form-label">I found the system unnecessarily complex.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="2" name="q3" id="q3" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q3" class="form-label">I thought the system was easy to use.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="4" name="q4" id="q4" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q4" class="form-label">I think that I would need the support of a technical person to be able to use this system.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="3" name="q5" id="q5" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q5" class="form-label">I found the various functions in this system were well integrated.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="1" name="q6" id="q6" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q6" class="form-label">I thought there was too much inconsistency in this system.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="3" name="q7" id="q7" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q7" class="form-label">I would imagine that most people would learn to use this system very quickly.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="3" name="q8" id="q8" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q8" class="form-label">I found the system very cumbersome to use.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="2" name="q9" id="q9" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q9" class="form-label">I felt very confident using the system.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" class="form-control" value="4" name="q10" id="q10" min="1" max="5" required>
+							</div>
+							<div class="col-9">
+								<label for="q10" class="form-label">I needed to learn a lot of things before I could get going with this system.</label>
+							</div>
+						</div>
+						<div class="row" style="border-width: 0rem;">
+							<div class="col-3">
+								<input type="number" step="any" class="form-control" id="answer">
+							</div>
+							<div class="col-9">
+								<p>out of 100</p>
+							</div>
+						</div>	
+						<button type="submit">Update Score</button>				
+				</form>	
+				</div>
+				<script src="../assets/main.js"></script>
 			</div>
 			<div class="col">
 				<div class="row text-start">
@@ -84,11 +175,11 @@
 						<!-- I wanted this code to matcht the tasks. -->
 						<h2>An example of one attempt:</h2>
 						<ol>
-							<li>Time: 04:02:12. This person immediately found the Wayback Machine, but ultimately gave up because of problems in finding the website. <img src="../assets/task-1.png"></li>
-							<li>Time: 06:03:04. They found the game in the search, but could not play the game. Once they made their way to the software page, they got stuck in the wrong archive. <img src="../assets/task-2.png"></li>
-							<li>Time: 00:13:29. They quickly found the answer on the webpage search tab. <img src="../assets/task-3.png"></li>
-							<li>Time: 01:16:34. They quickly found the donation page, but missed the key information at the bottom of the page. They succeeded by looking in the FAQ section. <img src="../assets/task-4.png"></li>
-							<li>Time: 01:14:71. They quickly found the events, but got stuck when searching for the date. They realized their mistake and figured out the answer. <img src="../assets/task-5.png"></li>
+							<li>Time: 04:02:12. This person immediately found the Wayback Machine, but ultimately gave up because of problems in finding the website. <img src="../assets/task-1.png" alt="Decorative image of an old UMW homepage."></li>
+							<li>Time: 06:03:04. They found the game in the search, but could not play the game. Once they made their way to the software page, they got stuck in the wrong archive. <img src="../assets/task-2.png" alt="Decorative image of Super Mario Bros. 3 in archive.org"></li>
+							<li>Time: 00:13:29. They quickly found the answer on the webpage search tab. <img src="../assets/task-3.png" alt="Decorative image of the about page of archive.org"></li>
+							<li>Time: 01:16:34. They quickly found the donation page, but missed the key information at the bottom of the page. They succeeded by looking in the FAQ section. <img src="../assets/task-4.png" alt="Decorative image of the donation page of archive.org"></li>
+							<li>Time: 01:14:71. They quickly found the events, but got stuck when searching for the date. They realized their mistake and figured out the answer. <img src="../assets/task-5.png" alt="Decorative image of the event page of archive.org"></li>
 						</ol>
 						<h3>SUS Score:</h3>
 						<p>45 out of 100</p>

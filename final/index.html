@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- 
+	About this page:
+		This page is meant to show a visualization of data about United States geographical dialects (specifically the continential states). This data is in no way complete; dialects are complex and can be influenced by things like race, gender, class, and so much more. I wanted this project to make people interested in dialectology because it is such a cool and interesting field. I primarily gathered my data from the resources below:
+
+		The Atlas of North American English (ANAE)
+
+		The Harvard Dialect Survey (http://dialect.redlog.net/)
+
+		Josh Katz's work found at https://brilliantmaps.com/linguistic-maps-that-divide-americans/
+
+		Rick Aschmann's website collecting data (https://aschmann.net/AmEng/)
+
+		I also used https://pudding.cool/process/how-to-implement-scrollytelling/ to make the scroll mechanic
+
+	-->
+	<title>Continental American Dialects</title>
+	
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container text-center">
+		<div class="row">
+			<!-- This row is meant to give context for why I made this project as well as give a disclaimer about how this project is for enjoyment, not defining dialects. -->
+			<h1>Features of North American Dialects in the Continental United States</h1>
+			<p style="text-align: start;">Even though we all speak English, that does not mean that all English is the same. English is made up of different dialects which are different ways of talking one language. Different dialects may pronounce words differently or have different words to refer to the same thing.</p>
+				<br>
+			<p style="text-align: start;">Now, this representation of dialectology, the study of dialects, is not meant to serve as a strict definition of how each U.S. states talks. It is a general representation of each state's majority dialectal features. Dialectology is a complex field, and this representation seeks to bring people into the beautiful world that is American Dialects. However, these representations will never be perfect because dialects are:</p>
+			<ol style="text-align: start; background-color: white;">
+				<li>Always changing</li>
+				<li>Highly related to social category (race, gender, social class, and more)</li>
+				<li>Primarily researched in old, White, rural men</li>
+			</ol>
+			<p style="text-align: start;">Regardless of the flaws, I hope that this representation will interest you, and that it will inspire you to think carefully before you correct people based on what you believe is "correct English." There is no truly correct English, and there are so many interesting things that come from differences in English!</p>
+		</div>
+		<div class="row">
+			<!-- This row is further divided into more rows based on each map. Each map get a jump button and information -->
+			<div class="row">
+				<h2>United States Dialects</h2>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+				<!-- This gives the user the option to click and choose a specific map. I used https://www.w3schools.com/css/css_dropdowns.asp for this code-->
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+  							<!-- I kinda just put an id on where I wanted the link to go to on the page and hoped for the best. It worked -->
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Dialects">
+					<!-- This is the map -->
+					<div class="flourish-embed flourish-map" data-src="visualisation/28720535"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28720535/thumbnail" class="img-fluid" width="100%" alt="Map of U.S. dialects" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<!-- This is the relevant information based on the map -->
+					<p>While dialects can vary in a state based on county, race, gender, class, and whether the person is a native to the state, there are general trends in U.S. dialects. Generally, states fall into the West, the North, the Northern Central, the Midlands, the South, the Inland North, or the Northern New England dialects. This is determined based on lexicon (word choices), accent (vocal quality of speaking), and syntax (sentence contsruction).</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Cot-Caught Merger</h2>
+				<!-- Same as above with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<!-- The menu does not need to repeat every time -->
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Cot-Caught">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721117"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721117/thumbnail" class="img-fluid" width="100%" alt="Map of Cot-Caught merger" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>One feature of English that is currently changing is the pronunciation of the words "cot" and "caught." Some dialects have the merger, which means that the words are pronounced the same, but other dialects keep the pronunciations different.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Pin-Pen Merger</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Pin-Pen">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721456"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721456/thumbnail" class="img-fluid" width="100%" alt="Map of Pin-Pen merger" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Another feature of English that is currently changing is the pronunciation of the words "pin" and "pen." Some dialects have the merger, which means that the words are pronounced the same, but other dialects keep the pronunciations different.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Lightning Bugs or Fireflies</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Firefly">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721505"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721505/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Lightning bug" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to this creature as different things. This creature is the small bug with a behind that lights up. The most popular ways to refer to it are "lightning bug" and "firefly."</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Trash or Garbage Can</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Trash">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721648"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721648/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Trash can" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to the waste product collection method as different things. The most popular ways to refer to it as "trash can" and "garbage can"</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>You, You Guys, or Y'all</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Yall">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721751"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721751/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Plural You" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects address multiple people in the second person in different ways. It may include "y'all," "you all," "you guys," "yins," etc.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Water or Drinking Fountain</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Bubbler">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721865"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721865/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Water fountain" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to public water stations in different ways. The most popular way to refer to them is as "water fountains" or "drinking fountains."</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Soda or Pop</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Soda">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721904"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721904/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Soda" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to carbonated drinks in different ways. These words include "soda," "pop," "soft drink," etc.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Caramel</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Caramel">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721939"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721939/thumbnail" class="img-fluid" width="100%" alt="Map of pronunciation of Caramel" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>A feature of dialects that may cause strife between you and your friends is the pronunciation of words. A word that is commonly pronounced differently by different dialects is "caramel." The primary difference is the syllable count, either two or three syllables, but there are other pronunciations that exist.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Crawfish, Crayfish, or Crawdad</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Craw">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28721996"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28721996/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Crawfish" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to the small lobster-like animal in rivers differently. It may be a "crawfish," a "crayfish," or even a "crawdad."</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Roundabout or Traffic Circle</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Traffic">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28722221"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28722221/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Roundabout" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to circular traffic intersections as different things. The most common names for this thing are "roundabout" and "traffic circle."</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Crayon</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="Crayon">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28722311"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28722311/thumbnail" class="img-fluid" width="100%" alt="Map of pronunciation of Crayon" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Another word that is pronounced differently by different dialects is "crayon." The different common pronunciations are very distinct in syllables and vowels; it can be pronounced "cran," "cray-on," or even "crown."</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h2>Roly Poly, Pill Bug, or Potato Bug</h2>
+				<!-- Same as first with next map -->
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<div class="dropdown">
+  						<button class="dropbtn">Other Features</button>
+  						<div class="dropdown-content">
+    						<a href="#Dialects">Dialects</a>
+    						<a href="#Cot-Caught">Cot-Caught Merger</a>
+    						<a href="#Pin-Pen">Pin-Pen Merger</a>
+    						<a href="#Firefly">Lightning bug</a>
+    						<a href="#Trash">Trash can</a>
+    						<a href="#Yall">Plural You</a>
+    						<a href="#Bubbler">Water fountain</a>
+    						<a href="#Soda">Soda</a>
+    						<a href="#Caramel">Caramel</a>
+    						<a href="#Craw">Crawfish</a>
+    						<a href="#Traffic">Roundabout</a>
+    						<a href="#Crayon">Crayon</a>
+    						<a href="#RolyPoly">Roly Poly</a>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" id="RolyPoly">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28722553"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28722553/thumbnail" class="img-fluid" width="100%" alt="Map of Lexical item: Roly Poly" /></noscript></div>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-2">
+					<p>Different dialects refer to the small bug that rolls up when frightened differently. The most common words for it are "roly poly," "pill bug," or "potato bug." Even areas where these critters are not common generally have a term they refer to the creatures as.</p>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<p>This data representation was pulled from The Atlas of North American English, The Harvard Dialect Survey, Josh Katz's work on dialects, and Rick Aschmann's collection of dialect information. Intellectual credit belongs to these sources.</p>
+		</div>
+	</div>
+</body>
+</html>

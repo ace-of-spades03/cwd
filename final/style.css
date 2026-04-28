@@ -47,7 +47,7 @@ h2 {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #bf6034
 }
 
 /* Show the dropdown content on hover */
@@ -57,5 +57,5 @@ h2 {
 
 /* Change background color of dropdown button on hover */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #bf6034;
 }
